@@ -18,11 +18,12 @@ body {
 .container {
     width: 420px;
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
     color: #fff;
     padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
 }
 
 .container h1 {
@@ -41,9 +42,78 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 40px;
     outline: none;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember_password {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember_password label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember_password a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember_password a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.register {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
 }
